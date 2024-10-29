@@ -24,17 +24,7 @@ def predict(model, img_path):
     predicted_class = np.argmax(prediction)
     print(f"Predicted class for {img_path}: {predicted_class}")
 
-"""if __name__ == "__main__":
-    model = load_model()
-    for i in range(10):
-        predict(model, f"./data/num{i}.png")
-
-check(".data/num0.png")"""
-
 if __name__ == "__main__":
     model = load_model()
     for i in range(10):
         predict(model, f"./data/num{i}.png")
-
-    # Correct the last line by calling 'predict' instead of 'check'
-    # predict(model, "./data/num0.png")
